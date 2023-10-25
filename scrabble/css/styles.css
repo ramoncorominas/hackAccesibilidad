@@ -1,0 +1,95 @@
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.board {
+	border-spacing: 0;
+	border: 0.5em solid #000;
+}
+
+.board__cell {
+	width: 2.4em;
+	height: 2.4em;
+	border: 0.2em dotted #777;
+}
+
+.cell--current {
+	border-style: solid;
+	border-color: #000;
+	outline: 0.5em solid #000;
+}
+
+.cell--empty {
+	background-color: #ccc;
+}
+
+.cell--letter {
+	background-color: #fff;
+	color: #000;
+	border-style: solid;
+	border-color: #333;
+}
+
+.cell--l2 {
+	background-color: #00c0ff;
+}
+
+.cell--l3 {
+	background-color: #0000ff;
+}
+
+.cell--w2 {
+	background-color: #ff80e5;
+}
+
+.cell--w3 {
+	background-color: #ff0000;
+}
+
+.live--info,
+.live--warn {
+	display: block;
+	width: 23.75em;
+	margin-top: 0.5em;
+	padding: 0.1em 0.5em;
+	border: 0.2em solid #000;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.75em;
+	text-align: center;
+}
+
+.live--info {
+	background-color: #3f3;
+	color: #000;
+}
+
+.live--warn {
+	background-color: #e00;
+	color: #fff;
+}
+.emoji {
+	position: relative;
+	font-size: 3em;
+}
+.emoji:focus > .tooltip {
+	left: 2em;
+	top: 0;
+	width: 4em;
+	height: auto;
+	overflow: auto;
+	padding: 0.1em 0.3em;
+	border: 2px solid #777;
+	background-color: #333;
+	color: #fff;
+}
+
+
+.visually-hidden,
+.tooltip,
+.board__cell>span {
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

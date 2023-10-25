@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tablero de Scrabble</title>
+	<link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1>Tablero de ejemplo</h1>
+
+	<button class="emoji">
+		<span aria-hidden="true">🐱</span>
+		<span class="tooltip">un lindo gatito</span>
+	</button>
+
+	<table id="board" class="board"
+	tabindex="0"
+		role="cell"
+		aria-roledescription="tablero">
+		<tr class="board__row"><!-- 1 -->
+			<td class="board__cell cell--w3"><span>triple palabra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--w3"><span>triple palabra</span></td>
+		</tr>
+		<tr class="board__row"><!-- 2 -->
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--w2"><span>doble palabra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l3"><span>triple letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+		</tr>
+		<tr class="board__row"><!-- 3 -->
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--w2"><span>doble palabra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+		</tr>
+		<tr class="board__row"><!-- 4 -->
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--w2"><span>doble palabra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+		</tr>
+		<tr class="board__row"><!-- 5 -->
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--w2"><span>doble palabra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+		</tr>
+		<tr class="board__row"><!-- 6 -->
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l3"><span>triple letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l3"><span>triple letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+		</tr>
+		<tr class="board__row"><!-- 7 -->
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+		</tr>
+		<tr class="board__row"><!-- 8 -->
+			<td class="board__cell cell--w3"><span>triple palabra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--l2"><span>doble letra</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--empty"><span>en blanco</span></td>
+			<td class="board__cell cell--w2 cell--current"><span>casilla central, doble palabra</span></td>
+		</tr>
+	</table>
+	<!-- Live region -->
+	<p id="info" class="live--info" role="status" aria-live="polite"></p>
+
+	<button>dummy button</button>
+
+
+	<script src="js/appWidget.js"></script>
+
+</body>
+
+</html>
